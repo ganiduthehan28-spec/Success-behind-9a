@@ -4,6 +4,7 @@ import DailyReminderButton from '@/components/DailyReminderButton';
 import PWAInstallButton from '@/components/PWAInstallButton';
 import AddToHomeScreen from '@/components/AddToHomeScreen';
 import ThemeToggle from '@/components/ThemeToggle';
+import WebpushrSubscriptionButton from '@/components/WebpushrSubscriptionButton';
 import Footer from '@/components/Footer';
 import PreparationBar from '@/components/PreparationBar';
 import StudyTips from '@/components/StudyTips';
@@ -20,6 +21,7 @@ export default function Home() {
           <DailyReminderButton />
           <PWAInstallButton />
           <AddToHomeScreen />
+          <WebpushrSubscriptionButton />
         </div>
       </header>
       <Image
