@@ -1,0 +1,10 @@
+name: Keep Netlify Alive
+on:
+  schedule:
+    - cron: "*/1 * * * *" # every minute to ensure daily triggers
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping website
+        run: curl -s https://ol-countdown-9a.netlify.app > /dev/null
