@@ -29,7 +29,7 @@ const PromoPopup = () => {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-[6px]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-transparent backdrop-blur-[6px]">
       <div className="bg-white rounded-2xl shadow-lg p-6 m-4 max-w-sm w-full text-center popup-animate relative">
         <h2 className="text-xl font-bold mb-4">
           Follow the Success Behind 9A (OL) 🇱🇰✨ official channel on WhatsApp

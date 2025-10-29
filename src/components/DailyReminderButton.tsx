@@ -31,6 +31,7 @@ export default function DailyReminderButton() {
         className="border rounded p-2 text-black"
       />
       <p className="text-sm text-gray-400">You&apos;ll get notified daily at this time ⏰</p>
+      <div id="webpushr-subscription-button" data-size="medium" data-show-subscriber-count="false" data-background-color="#00e1ff"></div>
     </div>
   );
 }
