@@ -30,13 +30,6 @@ export default function DailyReminderButton() {
 
   return (
     <>
-      <button
-        onClick={() => setShowModal(true)}
-        className="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
-      >
-        Set Daily Reminder
-      </button>
-
       {showModal && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 backdrop-blur-md flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -48,18 +41,6 @@ export default function DailyReminderButton() {
               className="border border-gray-300 rounded-md p-2 mb-4 w-full text-black"
             />
             <div className="flex justify-end space-x-2">
-              <button
-                onClick={() => setShowModal(false)}
-                className="px-4 py-2 bg-gray-300 text-gray-800 rounded-md hover:bg-gray-400"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={handleSaveReminder}
-                className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600"
-              >
-                Save
-              </button>
             </div>
           </div>
         </div>

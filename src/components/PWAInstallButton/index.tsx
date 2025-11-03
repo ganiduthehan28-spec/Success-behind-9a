@@ -48,14 +48,7 @@ const PWAInstallButton: React.FC = () => {
     return null; // Don't show the button if PWA is installed or prompt is not available
   }
 
-  return (
-    <button
-      onClick={handleInstallClick}
-      className="px-4 py-2 bg-green-500 text-white rounded-md shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75"
-    >
-      Add to Home Screen
-    </button>
-  );
+  return null;
 };
 
 export default PWAInstallButton;

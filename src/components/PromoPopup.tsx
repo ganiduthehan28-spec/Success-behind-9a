@@ -43,12 +43,6 @@ const PromoPopup = () => {
           >
             Join Now
           </a>
-          <button
-            onClick={() => setIsOpen(false)}
-            className="block w-full sm:w-auto bg-gray-300 text-gray-800 font-bold py-3 px-4 rounded-lg hover:bg-gray-400 transition-colors"
-          >
-            Close
-          </button>
         </div>
       </div>
     </div>

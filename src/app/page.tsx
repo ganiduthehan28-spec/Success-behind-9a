@@ -1,10 +1,7 @@
 
 import Countdown from '@/components/countdown';
-import DailyReminderButton from '@/components/DailyReminderButton';
-import PWAInstallButton from '@/components/PWAInstallButton';
 import AddToHomeScreen from '@/components/AddToHomeScreen';
 import ThemeToggle from '@/components/ThemeToggle';
-import WebpushrSubscriptionButton from '@/components/WebpushrSubscriptionButton';
 import Footer from '@/components/Footer';
 import PreparationBar from '@/components/PreparationBar';
 import StudyTips from '@/components/StudyTips';
@@ -18,10 +15,7 @@ export default function Home() {
       <header className="w-full p-4 pb-8 flex justify-center">
         <div className="flex gap-4">
           <ThemeToggle />
-          <DailyReminderButton />
-          <PWAInstallButton />
           <AddToHomeScreen />
-          <WebpushrSubscriptionButton />
         </div>
       </header>
       <Image
