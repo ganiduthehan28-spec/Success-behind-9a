@@ -46,27 +46,27 @@ export default function Countdown() {
 
   return (
     <div className="text-center">
-      <div className="grid grid-cols-4 gap-2 sm:gap-4">
-        <div className="p-2 sm:p-4 rounded-lg bg-gray-200 dark:bg-gray-800">
-          <span className="text-2xl sm:text-4xl font-bold">{time.days}</span>
-          <span className="block text-xs sm:text-sm">Days</span>
+      <div className="grid grid-cols-4 gap-4">
+        <div className="time-card">
+          <span className="time-value">{time.days}</span>
+          <span className="time-unit">Days</span>
         </div>
-        <div className="p-2 sm:p-4 rounded-lg bg-gray-200 dark:bg-gray-800">
-          <span className="text-2xl sm:text-4xl font-bold">{time.hours}</span>
-          <span className="block text-xs sm:text-sm">Hours</span>
+        <div className="time-card">
+          <span className="time-value">{time.hours}</span>
+          <span className="time-unit">Hours</span>
         </div>
-        <div className="p-2 sm:p-4 rounded-lg bg-gray-200 dark:bg-gray-800">
-          <span className="text-2xl sm:text-4xl font-bold">{time.minutes}</span>
-          <span className="block text-xs sm:text-sm">Minutes</span>
+        <div className="time-card">
+          <span className="time-value">{time.minutes}</span>
+          <span className="time-unit">Minutes</span>
         </div>
-        <div className="p-2 sm:p-4 rounded-lg bg-gray-200 dark:bg-gray-800">
-          <span className="text-2xl sm:text-4xl font-bold">{time.seconds}</span>
-          <span className="block text-xs sm:text-sm">Seconds</span>
+        <div className="time-card">
+          <span className="time-value">{time.seconds}</span>
+          <span className="time-unit">Seconds</span>
         </div>
       </div>
-      <div className="mt-4 p-4 rounded-lg bg-gray-100 dark:bg-gray-700">
-        <p className="text-sm sm:text-base italic">{quote.en}</p>
-        <p className="text-sm sm:text-base italic mt-2">{quote.si}</p>
+      <div className="quote-bar">
+        <p className="quote-en">{quote.en}</p>
+        <p className="quote-si">{quote.si}</p>
       </div>
     </div>
   );

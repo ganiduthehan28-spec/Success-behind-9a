@@ -1,7 +1,6 @@
 
 import Countdown from '@/components/countdown';
 import AddToHomeScreen from '@/components/AddToHomeScreen';
-import ThemeToggle from '@/components/ThemeToggle';
 import Footer from '@/components/Footer';
 import PreparationBar from '@/components/PreparationBar';
 import StudyTips from '@/components/StudyTips';
@@ -14,7 +13,6 @@ export default function Home() {
     >
       <header className="w-full p-4 pb-8 flex justify-center pt-8 sm:pt-12 md:pt-16">
         <div className="flex gap-4">
-          <ThemeToggle />
           <AddToHomeScreen />
         </div>
       </header>
