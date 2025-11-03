@@ -26,7 +26,14 @@ const ThemeToggle: React.FC = () => {
     }
   };
 
-  return null;
+  return (
+    <button
+      onClick={toggleTheme}
+      className="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-md shadow-md hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75"
+    >
+      {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+    </button>
+  );
 };
 
 export default ThemeToggle;
