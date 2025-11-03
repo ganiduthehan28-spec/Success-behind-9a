@@ -47,19 +47,19 @@ export default function Countdown() {
   return (
     <div className="text-center">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="p-4 rounded-lg">
+        <div className="time-card p-4 rounded-lg">
           <span className="text-4xl font-bold">{time.days}</span>
           <span className="block text-sm">Days</span>
         </div>
-        <div className="p-4 rounded-lg">
+        <div className="time-card p-4 rounded-lg">
           <span className="text-4xl font-bold">{time.hours}</span>
           <span className="block text-sm">Hours</span>
         </div>
-        <div className="p-4 rounded-lg">
+        <div className="time-card p-4 rounded-lg">
           <span className="text-4xl font-bold">{time.minutes}</span>
           <span className="block text-sm">Minutes</span>
         </div>
-        <div className="p-4 rounded-lg">
+        <div className="time-card p-4 rounded-lg">
           <span className="text-4xl font-bold">{time.seconds}</span>
           <span className="block text-sm">Seconds</span>
         </div>
