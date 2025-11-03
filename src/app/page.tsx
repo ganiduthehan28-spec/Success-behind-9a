@@ -9,9 +9,9 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div
-      className="min-h-screen flex flex-col items-center pt-16 px-4 sm:px-6 lg:px-8"
+      className="min-h-screen flex flex-col items-center pt-8 px-4 sm:px-6 lg:px-8"
     >
-      <header className="w-full p-4 pb-8 flex justify-center pt-8 sm:pt-12 md:pt-16">
+      <header className="w-full p-4 pb-8 flex justify-center pt-4 sm:pt-6 md:pt-8">
         <div className="flex gap-4">
           <AddToHomeScreen />
         </div>
