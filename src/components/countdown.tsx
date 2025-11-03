@@ -64,7 +64,7 @@ export default function Countdown() {
           <span className="block text-sm text-white">Seconds</span>
         </div>
       </div>
-      <div className="mt-4 p-4 rounded-lg">
+      <div className="mt-4 quote-bar p-4 rounded-lg">
         <p className="text-base italic text-white">{quote.en}</p>
         <p className="text-base italic mt-2 text-white">{quote.si}</p>
       </div>
