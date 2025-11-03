@@ -46,27 +46,27 @@ export default function Countdown() {
 
   return (
     <div className="text-center">
-      <div className="grid grid-cols-4 gap-4">
-        <div className="time-card">
-          <span className="time-value">{time.days}</span>
-          <span className="time-unit">Days</span>
+      <div className="flex flex-wrap justify-center gap-4">
+        <div className="p-4 rounded-lg bg-gray-200 dark:bg-gray-800 min-w-[100px]">
+          <span className="text-4xl font-bold">{time.days}</span>
+          <span className="block text-sm">Days</span>
         </div>
-        <div className="time-card">
-          <span className="time-value">{time.hours}</span>
-          <span className="time-unit">Hours</span>
+        <div className="p-4 rounded-lg bg-gray-200 dark:bg-gray-800 min-w-[100px]">
+          <span className="text-4xl font-bold">{time.hours}</span>
+          <span className="block text-sm">Hours</span>
         </div>
-        <div className="time-card">
-          <span className="time-value">{time.minutes}</span>
-          <span className="time-unit">Minutes</span>
+        <div className="p-4 rounded-lg bg-gray-200 dark:bg-gray-800 min-w-[100px]">
+          <span className="text-4xl font-bold">{time.minutes}</span>
+          <span className="block text-sm">Minutes</span>
         </div>
-        <div className="time-card">
-          <span className="time-value">{time.seconds}</span>
-          <span className="time-unit">Seconds</span>
+        <div className="p-4 rounded-lg bg-gray-200 dark:bg-gray-800 min-w-[100px]">
+          <span className="text-4xl font-bold">{time.seconds}</span>
+          <span className="block text-sm">Seconds</span>
         </div>
       </div>
-      <div className="quote-bar">
-        <p className="quote-en">{quote.en}</p>
-        <p className="quote-si">{quote.si}</p>
+      <div className="mt-4 p-4 rounded-lg bg-gray-100 dark:bg-gray-700">
+        <p className="text-base italic">{quote.en}</p>
+        <p className="text-base italic mt-2">{quote.si}</p>
       </div>
     </div>
   );
