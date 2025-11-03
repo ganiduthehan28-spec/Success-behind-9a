@@ -19,10 +19,10 @@ export default function StudyTips() {
   }, [updateTip]);
 
   return (
-    <div className="tip-bar">
+    <div className="mt-8 p-4 rounded-lg bg-gray-100 dark:bg-gray-700 w-full max-w-2xl">
       <h3 className="text-lg font-semibold mb-2">Study Tip:</h3>
-      <p className="tip-en">{tip.en}</p>
-      {tip.si && <p className="tip-si">{tip.si}</p>}
+      <p className="text-sm sm:text-base">{tip.en}</p>
+      {tip.si && <p className="text-sm sm:text-base mt-2">{tip.si}</p>}
     </div>
   );
 }

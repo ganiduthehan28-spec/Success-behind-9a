@@ -67,7 +67,7 @@ const AddToHomeScreen: React.FC = () => {
   return (
     <button
       onClick={handleInstallClick}
-      className="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
+      className="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 bg-blue-500 text-white text-sm sm:text-base rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
     >
       Add to Home Screen
     </button>

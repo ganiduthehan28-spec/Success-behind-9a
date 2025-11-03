@@ -32,7 +32,7 @@ export default function PreparationBar() {
 
   return (
     <div className="w-full max-w-2xl p-4">
-        <h2 className="text-2xl font-semibold text-center mb-2">Preparation Progress</h2>
+        <h2 className="text-xl sm:text-2xl font-semibold text-center mb-2">Preparation Progress</h2>
         <div className="w-full bg-gray-700 rounded-full h-4 my-2">
             <div
                 className="bg-green-500 h-4 rounded-full"
