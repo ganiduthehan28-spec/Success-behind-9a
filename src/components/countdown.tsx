@@ -48,26 +48,27 @@ export default function Countdown() {
     <div className="text-center">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <div className="time-card p-4 rounded-lg">
-          <span className="text-4xl font-bold">{time.days}</span>
-          <span className="block text-sm">Days</span>
+          <span className="time-value text-white">{time.days}</span>
+          <span className="block text-sm text-white">Days</span>
         </div>
         <div className="time-card p-4 rounded-lg">
-          <span className="text-4xl font-bold">{time.hours}</span>
-          <span className="block text-sm">Hours</span>
+          <span className="time-value text-white">{time.hours}</span>
+          <span className="block text-sm text-white">Hours</span>
         </div>
         <div className="time-card p-4 rounded-lg">
-          <span className="text-4xl font-bold">{time.minutes}</span>
-          <span className="block text-sm">Minutes</span>
+          <span className="time-value text-white">{time.minutes}</span>
+          <span className="block text-sm text-white">Minutes</span>
         </div>
         <div className="time-card p-4 rounded-lg">
-          <span className="text-4xl font-bold">{time.seconds}</span>
-          <span className="block text-sm">Seconds</span>
+          <span className="time-value text-white">{time.seconds}</span>
+          <span className="block text-sm text-white">Seconds</span>
         </div>
       </div>
       <div className="mt-4 p-4 rounded-lg">
-        <p className="text-base italic">{quote.en}</p>
-        <p className="text-base italic mt-2">{quote.si}</p>
+        <p className="text-base italic text-white">{quote.en}</p>
+        <p className="text-base italic mt-2 text-white">{quote.si}</p>
       </div>
     </div>
   );
+
 }
