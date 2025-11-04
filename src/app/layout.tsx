@@ -24,6 +24,20 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
+        {/* Google Analytics GA4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCSLNETY6M"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-KCSLNETY6M', {
+                page_path: window.location.pathname
+              });
+            `,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
