@@ -43,7 +43,7 @@ export default function PreparationBar() {
         <p className="text-center text-sm">{progress.toFixed(2)}% of your preparation time has passed</p>
         <div className="flex justify-between text-sm mt-2">
             <span>Started: Jan 1, 2024</span>
-            <span>Ends: Feb 17, 2026</span>
+            <span>Ends: Feb 17, 2025(2026)</span>
         </div>
     </div>
   );

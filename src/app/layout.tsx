@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import PromoPopup from "@/components/PromoPopup";
 
@@ -9,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "O/L Countdown 2026",
+  title: "O/L Countdown 2025(2026)",
   description: "Daily O/L Exam Reminder - Offline Supported",
   manifest: "/manifest.json",
 };
@@ -24,20 +25,6 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
-        {/* Google Analytics GA4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCSLNETY6M"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-KCSLNETY6M', {
-                page_path: window.location.pathname
-              });
-            `,
-          }}
-        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -51,6 +38,21 @@ export default function RootLayout({
       <body className={poppins.className}>
         {children}
         <PromoPopup />
+        {/* Google Analytics GA4 */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-KCSLNETY6M"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KCSLNETY6M', {
+              page_path: window.location.pathname
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

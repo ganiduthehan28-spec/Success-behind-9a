@@ -23,7 +23,7 @@ export default function Home() {
         height={200}
         className="mb-8 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64"
       />
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">2026 O/L Countdown</h1>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">2025(2026) O/L Countdown</h1>
       <PreparationBar />
       <Countdown />
       <StudyTips />
